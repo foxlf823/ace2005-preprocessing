@@ -141,6 +141,7 @@ class Parser:
                 sents.extend(sent.split('\n\n'))
             sents = list(filter(lambda x: len(x) > 5, sents))
             sents = sents[1:]
+            # sents = sents[1:-1] # feili
             sents_with_pos = []
             last_pos = 0
             for sent in sents:
